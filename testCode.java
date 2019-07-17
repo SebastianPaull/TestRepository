@@ -7,7 +7,10 @@ class BigDec implements Comparator<String>
       		  {
      		      return 0;
      		  }
-      	        return (new BigDecimal(b)).compareTo(new BigDecimal(a));
+			  else
+			  {
+      	      return (new BigDecimal(b)).compareTo(new BigDecimal(a));
+			  }
       	    }
       	}
       	Arrays.sort(s, new BigDec());
